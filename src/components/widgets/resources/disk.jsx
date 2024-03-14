@@ -9,7 +9,7 @@ export default function Disk({ options, expanded, diskUnits, refresh = 1500 }) {
   const { t } = useTranslation();
   const diskUnitsName = diskUnits === "bbytes" ? "common.bbytes" : "common.bytes";
 
-  const { data, error } = useSWR(`/api/widgets/resources?type=disk&target=${options.disk}`, {
+  const { data, error } = useSWR(`api/widgets/resources?type=disk&target=${options.disk}`, {
     refreshInterval: refresh,
   });
 

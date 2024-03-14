@@ -56,10 +56,10 @@ export async function getStaticProps() {
       props: {
         initialSettings: settings,
         fallback: {
-          "/api/services": services,
-          "/api/bookmarks": bookmarks,
-          "/api/widgets": widgets,
-          "/api/hash": false,
+          "api/services": services,
+          "api/bookmarks": bookmarks,
+          "api/widgets": widgets,
+          "api/hash": false,
         },
         ...(await serverSideTranslations(settings.language ?? "en")),
       },
@@ -72,10 +72,10 @@ export async function getStaticProps() {
       props: {
         initialSettings: {},
         fallback: {
-          "/api/services": [],
-          "/api/bookmarks": [],
-          "/api/widgets": [],
-          "/api/hash": false,
+          "api/services": [],
+          "api/bookmarks": [],
+          "api/widgets": [],
+          "api/hash": false,
         },
         ...(await serverSideTranslations("en")),
       },
@@ -86,8 +86,8 @@ export async function getStaticProps() {
 function Index({ initialSettings, fallback }) {
   const windowFocused = useWindowFocus();
   const [stale, setStale] = useState(false);
-  const { data: errorsData } = useSWR("/api/validate");
-  const { data: hashData, mutate: mutateHash } = useSWR("/api/hash");
+  const { data: errorsData } = useSWR("api/validate");
+  const { data: hashData, mutate: mutateHash } = useSWR("api/hash");
 
   useEffect(() => {
     if (windowFocused) {
@@ -108,7 +108,7 @@ function Index({ initialSettings, fallback }) {
           setStale(true);
           localStorage.setItem("hash", hashData.hash);
 
-          fetch("/api/revalidate").then((res) => {
+          fetch("api/revalidate").then((res) => {
             if (res.ok) {
               window.location.reload();
             }
@@ -179,9 +179,9 @@ function Home({ initialSettings }) {
     setSettings(initialSettings);
   }, [initialSettings, setSettings]);
 
-  const { data: services } = useSWR("/api/services");
-  const { data: bookmarks } = useSWR("/api/bookmarks");
-  const { data: widgets } = useSWR("/api/widgets");
+  const { data: services } = useSWR("api/services");
+  const { data: bookmarks } = useSWR("api/bookmarks");
+  const { data: widgets } = useSWR("api/widgets");
 
   const servicesAndBookmarks = [
     ...services.map((sg) => sg.services).flat(),
@@ -381,20 +381,20 @@ function Home({ initialSettings }) {
           </>
         ) : (
           <>
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4" />
-            <link rel="shortcut icon" href="/homepage.ico" />
-            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4" />
-            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4" />
-            <link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#1e9cd7" />
+            <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=4" />
+            <link rel="shortcut icon" href="homepage.ico" />
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=4" />
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=4" />
+            <link rel="mask-icon" href="safari-pinned-tab.svg?v=4" color="#1e9cd7" />
           </>
         )}
         <meta name="msapplication-TileColor" content={themes[settings.color || "slate"][settings.theme || "dark"]} />
         <meta name="theme-color" content={themes[settings.color || "slate"][settings.theme || "dark"]} />
-        <link rel="preload" href="/api/config/custom.css" as="style" />
-        <link rel="stylesheet" href="/api/config/custom.css" /> {/* eslint-disable-line @next/next/no-css-tags */}
+        <link rel="preload" href="api/config/custom.css" as="style" />
+        <link rel="stylesheet" href="api/config/custom.css" /> {/* eslint-disable-line @next/next/no-css-tags */}
       </Head>
 
-      <Script src="/api/config/custom.js" />
+      <Script src="api/config/custom.js" />
 
       <div className="relative container m-auto flex flex-col justify-start z-10 h-full">
         <QuickLaunch

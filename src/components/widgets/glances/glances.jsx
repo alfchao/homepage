@@ -24,7 +24,7 @@ export default function Widget({ options }) {
   const diskUnits = options.diskUnits === "bbytes" ? "common.bbytes" : "common.bytes";
 
   const { data, error } = useSWR(
-    `/api/widgets/glances?${new URLSearchParams({ lang: i18n.language, ...options }).toString()}`,
+    `api/widgets/glances?${new URLSearchParams({ lang: i18n.language, ...options }).toString()}`,
     {
       refreshInterval: 1500,
     },

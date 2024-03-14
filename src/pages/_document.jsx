@@ -9,7 +9,7 @@ export default function Document() {
           content="A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations."
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <link rel="manifest" href="/site.webmanifest?v=4" crossOrigin="use-credentials" />
+        <link rel="manifest" href="site.webmanifest?v=4" crossOrigin="use-credentials" />
       </Head>
       <body>
         <Main />

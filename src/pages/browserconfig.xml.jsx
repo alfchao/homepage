@@ -11,7 +11,7 @@ export async function getServerSideProps({ res }) {
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/mstile-150x150.png?v=2"/>
+            <square150x150logo src="mstile-150x150.png?v=2"/>
             <TileColor>${themes[color][theme]}</TileColor>
         </tile>
     </msapplication>
