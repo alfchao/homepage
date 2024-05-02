@@ -12,7 +12,7 @@
         "number": "{{value, number}}",
         "ms": "{{value, number}}",
         "date": "{{value, date}}",
-        "relativeDate": "{{value, relativeDate}}",
+        "relativeDate": "{{valor, relativaFecha}}",
         "uptime": "{{value, uptime}}",
         "months": "me",
         "days": "d",
@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "Desconectado",
+        "offline_alt": "Desconectado",
         "online": "En línea",
         "total": "Total",
         "unknown": "Desconocido"
@@ -139,7 +140,7 @@
         "connectionStatusPendingDisconnect": "Desconexión pendiente",
         "connectionStatusDisconnecting": "Desconectando",
         "connectionStatusDisconnected": "Desconectado",
-        "connectionStatusConnected": "Conectado",
+        "connectionStatusConnected": "Connected",
         "uptime": "Tiempo activo",
         "maxDown": "Descarga máxima",
         "maxUp": "Subida máxima",
@@ -276,11 +277,11 @@
         "approved": "Aprobado",
         "available": "Disponible"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Total",
-        "connected": "Conectado",
-        "new_devices": "Nuevos dispositivos",
-        "down_alerts": "Alertas de caídas"
+        "connected": "Connected",
+        "new_devices": "New Devices",
+        "down_alerts": "Down Alerts"
     },
     "pihole": {
         "queries": "Consultas",
@@ -426,7 +427,7 @@
         "custom": "Personalizado",
         "visit": "Visitar",
         "url": "Enlace",
-        "searchsuggestion": "Suggestion"
+        "searchsuggestion": "Sugerencia"
     },
     "wmo": {
         "0-day": "Soleado",
@@ -544,13 +545,13 @@
         "channels": "Canales",
         "hd": "Alta definición",
         "tunerCount": "Tuners",
-        "channelNumber": "Channel",
-        "channelNetwork": "Network",
-        "signalStrength": "Strength",
-        "signalQuality": "Quality",
-        "symbolQuality": "Quality",
+        "channelNumber": "Canal",
+        "channelNetwork": "Red",
+        "signalStrength": "Intensidad",
+        "signalQuality": "Calidad",
+        "symbolQuality": "Calidad",
         "networkRate": "Tasa de bits",
-        "clientIP": "Client"
+        "clientIP": "Cliente"
     },
     "scrutiny": {
         "passed": "Aprobado",
@@ -797,10 +798,10 @@
     },
     "openwrt": {
         "uptime": "Tiempo activo",
-        "cpuLoad": "CPU Load Avg (5m)",
+        "cpuLoad": "Carga promedio del CPU (5m)",
         "up": "Activo",
         "down": "Inactivo",
-        "bytesTx": "Transmitted",
+        "bytesTx": "Transmitido",
         "bytesRx": "Recibido"
     },
     "uptimerobot": {
@@ -825,21 +826,21 @@
         "noEventsFound": "No se encontraron eventos"
     },
     "romm": {
-        "platforms": "Platforms",
+        "platforms": "Plataformas",
         "totalRoms": "Total ROMs"
     },
     "netdata": {
-        "warnings": "Warnings",
-        "criticals": "Criticals"
+        "warnings": "Advertencias",
+        "criticals": "Críticos"
     },
     "plantit": {
-        "events": "Events",
+        "events": "Eventos",
         "plants": "Plants",
         "photos": "Fotos",
         "species": "Species"
     },
     "gitea": {
-        "notifications": "Notifications",
+        "notifications": "Notificaciones",
         "issues": "Números",
         "pulls": "Pull Requests"
     },
@@ -850,9 +851,9 @@
         "playDuration": "Time Watched",
         "sceneSize": "Scenes Size",
         "sceneDuration": "Scenes Duration",
-        "images": "Images",
-        "imageSize": "Images Size",
-        "galleries": "Galleries",
+        "images": "Imágenes",
+        "imageSize": "Tamaño de imagen",
+        "galleries": "Galerías",
         "performers": "Performers",
         "studios": "Studios",
         "movies": "Películas",
@@ -863,5 +864,17 @@
         "users": "Usuarios",
         "recipes": "Recetas",
         "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "Con Garantía",
+        "locations": "Ubicaciones",
+        "labels": "Etiquetas",
+        "users": "Usuarios",
+        "totalValue": "Valor total"
+    },
+    "crowdsec": {
+        "alerts": "Alertas",
+        "bans": "Bans"
     }
 }

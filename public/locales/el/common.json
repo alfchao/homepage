@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "Εκτός σύνδεσης",
+        "offline_alt": "Εκτός σύνδεσης",
         "online": "Συνδεδεμένοι",
         "total": "Σύνολο",
         "unknown": "Άγνωστο"
@@ -276,7 +277,7 @@
         "approved": "Εγκρίθηκε",
         "available": "Διαθέσιμο"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Σύνολο",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -863,5 +864,17 @@
         "users": "Χρήστες",
         "recipes": "Recipes",
         "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Χρήστες",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Ειδοποιήσεις",
+        "bans": "Bans"
     }
 }

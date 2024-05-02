@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "Offline",
+        "offline_alt": "Offline",
         "online": "Online",
         "total": "Gesamt",
         "unknown": "Unbekannt"
@@ -276,7 +277,7 @@
         "approved": "Genehmigt",
         "available": "Verfügbar"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Gesamt",
         "connected": "Verbunden",
         "new_devices": "Neue Geräte",
@@ -863,5 +864,17 @@
         "users": "Benutzer",
         "recipes": "Rezepte",
         "keywords": "Schlagwörter"
+    },
+    "homebox": {
+        "items": "Objekte",
+        "totalWithWarranty": "Mit Garantie",
+        "locations": "Orte",
+        "labels": "Labels",
+        "users": "Benutzer",
+        "totalValue": "Gesamtwert"
+    },
+    "crowdsec": {
+        "alerts": "Warnungen",
+        "bans": "Banns"
     }
 }

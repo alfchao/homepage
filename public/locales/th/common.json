@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "ออฟไลน์",
+        "offline_alt": "ออฟไลน์",
         "online": "Online",
         "total": "ทั้งหมด",
         "unknown": "ไม่ทราบ"
@@ -276,7 +277,7 @@
         "approved": "Approved",
         "available": "Available"
     },
-    "pialert": {
+    "netalertx": {
         "total": "ทั้งหมด",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -863,5 +864,17 @@
         "users": "ผู้ใช้",
         "recipes": "Recipes",
         "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "ผู้ใช้",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Alerts",
+        "bans": "Bans"
     }
 }

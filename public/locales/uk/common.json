@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "Офлайн",
+        "offline_alt": "Офлайн",
         "online": "Онлайн",
         "total": "Усього",
         "unknown": "Невідомий"
@@ -139,7 +140,7 @@
         "connectionStatusPendingDisconnect": "Pending Disconnect",
         "connectionStatusDisconnecting": "Disconnecting",
         "connectionStatusDisconnected": "Disconnected",
-        "connectionStatusConnected": "Підключено",
+        "connectionStatusConnected": "Connected",
         "uptime": "Час роботи",
         "maxDown": "Max. Down",
         "maxUp": "Max. Up",
@@ -276,11 +277,11 @@
         "approved": "Затверджено",
         "available": "Доступно"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Усього",
-        "connected": "Підключено",
-        "new_devices": "Нові пристрої",
-        "down_alerts": "Сповіщення про збій"
+        "connected": "Connected",
+        "new_devices": "New Devices",
+        "down_alerts": "Down Alerts"
     },
     "pihole": {
         "queries": "Запити",
@@ -863,5 +864,17 @@
         "users": "Користувачі",
         "recipes": "Recipes",
         "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Користувачі",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Оповіщення",
+        "bans": "Bans"
     }
 }

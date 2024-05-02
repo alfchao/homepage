@@ -109,6 +109,7 @@
     },
     "esphome": {
         "offline": "Ngoại tuyến",
+        "offline_alt": "Ngoại tuyến",
         "online": "Online",
         "total": "Tổng",
         "unknown": "Unknown"
@@ -276,7 +277,7 @@
         "approved": "Đã duyệt",
         "available": "Available"
     },
-    "pialert": {
+    "netalertx": {
         "total": "Tổng",
         "connected": "Connected",
         "new_devices": "New Devices",
@@ -863,5 +864,17 @@
         "users": "Users",
         "recipes": "Recipes",
         "keywords": "Keywords"
+    },
+    "homebox": {
+        "items": "Items",
+        "totalWithWarranty": "With Warranty",
+        "locations": "Locations",
+        "labels": "Labels",
+        "users": "Users",
+        "totalValue": "Total Value"
+    },
+    "crowdsec": {
+        "alerts": "Alerts",
+        "bans": "Bans"
     }
 }
